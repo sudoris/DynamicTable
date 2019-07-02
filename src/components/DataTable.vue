@@ -35,7 +35,7 @@
     <Modal v-if="showModal" @close="showModal = false">
       <template slot="body">
         <form @submit="saveChanges" class="edit-form">
-          <label class="input-label">Name: <input type="text" v-model="trackEdit.name" value="test"></label>
+          <label class="input-label">Name: <input type="text" v-model="trackEdit.name" required></label>
           <label class="input-label">Phone: 
             <input type="tel" v-model="trackEdit.phone" pattern="[0-9]{2}-[0-9]{7}">
           </label>
